@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wacky Movers</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles */
+        *{
+            caret-color: transparent;
+        }
+        .fixed-header {
+            top: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
+            z-index: 50;
+            background-color: #ffffff; /* White background for better contrast */
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            border-radius: 50%;
+            padding: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp-button:hover {
+            background-color: #128c7e;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="fixed-header w-full shadow-lg py-4">
+        <div class="container mx-auto flex items-center justify-between px-6">
+            <div class="flex items-center space-x-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxW1IrnYO_ICNcwW8514UQAXFyXqlBp5596g&s" alt="Truck Icon" class="w-16 h-16">
+                <div class="ml-4">
+                    <h1 class="text-4xl font-bold text-blue-800">WACKY MOVERS</h1>
+                    <p class="text-sm text-gray-600">We put fun in moving</p>
+                </div>
+            </div>
+            <nav class="flex space-x-6">
+                <a href="#about" class="text-blue-800 hover:text-blue-900">About</a>
+                <a href="#services" class="text-blue-800 hover:text-blue-900">Services</a>
+                <a href="#gallery" class="text-blue-800 hover:text-blue-900">Gallery</a>
+                <a href="#connect" class="text-blue-800 hover:text-blue-900">Connect</a>
+                <a href="#contact" class="text-blue-800 hover:text-blue-900">Contact</a>
+                <a href="#comments" class="text-blue-800 hover:text-blue-900">Comments</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-20">
+        <!-- Home Section -->
+        <section id="home" class="py-24 bg-cover bg-center" style="background-image: url('hero-image.jpg');">
+            <div class="container mx-auto text-center text-white bg-gray-900 bg-opacity-50 py-12 px-6 rounded-lg shadow-lg">
+                <h2 class="text-5xl font-extrabold">Your Trusted Moving Partner</h2>
+                <p class="mt-4 text-lg">Making your move stress-free and enjoyable.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto text-center px-6">
+                <h2 class="text-3xl font-bold text-blue-800">About Us</h2>
+                <p class="mt-6 text-lg leading-relaxed">At Wacky Movers, we believe moving should be a fun and stress-free experience. Our team of professionals is dedicated to providing top-notch moving services tailored to meet your unique needs. Whether you're moving locally or across the country, we've got you covered. With years of experience and a passion for customer satisfaction, we ensure your move is handled with care and efficiency.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-gray-50">
+            <div class="container mx-auto text-center px-6">
+                <h2 class="text-3xl font-bold text-blue-800">Our Services</h2>
+                <p class="mt-4 text-lg">We offer a wide range of moving services to suit every need:</p>
+                <ul class="mt-6 space-y-4 text-lg">
+                    <li class="bg-white p-6 shadow-md rounded-lg">Residential Moving</li>
+                    <li class="bg-white p-6 shadow-md rounded-lg">Commercial Moving</li>
+                    <li class="bg-white p-6 shadow-md rounded-lg">Specialty Moving</li>
+                    <li class="bg-white p-6 shadow-md rounded-lg">Packing and Unpacking</li>
+                    <li class="bg-white p-6 shadow-md rounded-lg">Storage Solutions</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16 bg-white">
+            <!-- <div class="container mx-auto text-center px-6">
+                <h2 class="text-3xl font-bold text-blue-800">Gallery</h2>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6m0cr7vB3OEDVhnvS3r0FdEULZZCEZwol1w&s" alt="Moving Image 1" class="w-full h-64 object-cover rounded-lg shadow-md">
+                    <img src="https://westpromovingservices.com/wp-content/uploads/2023/01/Office-relocation.jpg" alt="Moving Image 2" class="w-full h-64 object-cover rounded-lg shadow-md">
+                    <img src="https://cmsplatform.blob.core.windows.net/wwwfostervanlinescom/page-info-images/765a45b8-9521-4da6-bde2-9867b21a8cf5.jpg" alt="Moving Image 3" class="w-full h-64 object-cover rounded-lg shadow-md">
+                    <img src="https://www.relaxlogistic.com/wp-content/uploads/2023/08/Packing-Unpacking-Service.jpg" alt="Moving Image 4" class="w-full h-64 object-cover rounded-lg shadow-md">
+                </div>
+            </div> -->
+            
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+        </section>
+
+        <!-- Connect Section -->
+        <section id="connect" class="py-16 bg-gray-50">
+            <div class="container mx-auto text-center px-6">
+                <h2 class="text-3xl font-bold text-blue-800">Connect with Us</h2>
+                <p class="mt-4 text-lg">Follow us on social media and stay updated with our latest offers and services.</p>
+                <div class="mt-6 flex justify-center space-x-6">
+                    <a href="#" class="w-12 h-12 flex items-center justify-center bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#" class="w-12 h-12 flex items-center justify-center bg-blue-400 text-white rounded-full shadow-md hover:bg-blue-500"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#" class="w-12 h-12 flex items-center justify-center bg-pink-600 text-white rounded-full shadow-md hover:bg-pink-700"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#" class="w-12 h-12 flex items-center justify-center bg-blue-800 text-white rounded-full shadow-md hover:bg-blue-900"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="container mx-auto text-center px-6">
+                <h2 class="text-3xl font-bold text-blue-800">Contact Us</h2>
+                <p class="mt-4 text-lg">Have questions or need a no-obligation quote?</p>
+                <div class="mt-6 text-lg">
+                    <p><strong>Phone:</strong> 437-605-MOVE (6683)</p>
+                    <p><strong>Phone:</strong> 647-745-4786</p>
+                    <p><strong>Email:</strong> <a href="mailto:wackymovers247@gmail.com" class="text-blue-600 hover:underline">wackymovers247@gmail.com</a></p>
+                    <p><strong>Website:</strong> <a href="http://www.wackymovers.ca" target="_blank" class="text-blue-600 hover:underline">www.wackymovers.ca</a></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Comments Section -->
+        <section id="comments" class="py-16 bg-gray-50">
+            <div class="container mx-auto text-center px-6">
+                <h2 class="text-3xl font-bold text-blue-700">Comments</h2>
+                <form class="mt-6 max-w-md mx-auto">
+                    <textarea class="w-full h-36 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none" placeholder="Leave your comment here"></textarea>
+                    <button type="submit" class="mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-lg">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-blue-700 text-white text-center">
+        <p>&copy; 2024 Wacky Movers. All rights reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/14376056683" class="whatsapp-button">
+        <img src="whatsapp-icon.png" alt="WhatsApp" class="w-12 h-12">
+    </a>
+
+</body>
+</html>
